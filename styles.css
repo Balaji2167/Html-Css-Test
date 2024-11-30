@@ -1,0 +1,116 @@
+/* Question-1 */
+.link-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.link-list li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.link-list a {
+    text-decoration: none;
+    color: blue;
+    font-size: 18px;
+}
+
+.link-list a:hover {
+    color: red; 
+}
+
+.link-list a:active {
+    color: green; 
+}
+
+/* Question-2 */
+h1 {
+    font-family: 'Arial', sans-serif;
+    text-shadow: 2px 2px 4px blue(0, 0, 0, 0.2);
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Question-3 */
+.card {
+    border: 1px solid gray;
+    padding: 20px;
+    margin: 10px;
+    max-width: 300px;
+    background-color: palegoldenrod;
+}
+
+/* Question-4 */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: darkblue;
+    padding: 10px;
+}
+
+nav a {
+    color: violet;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    background-color: pink;
+}
+
+/* Question-5 */
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+/* Make the grid responsive for screens smaller than 600px */
+@media (max-width: 600px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Question-6 */
+.color-change-btn {
+    background-color: blue;
+    color: yellow;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.color-change-btn:hover {
+    background-color: darkblue;
+}
+
+/* Question-7 */
+.scale-button {
+    width: 150px;
+    height: 50px;
+    background-color: green;
+    color: red;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.scale-button:hover {
+    transform: scale(1.2); 
+}
